@@ -3,34 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-    <title>Price Range</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive DropDown</title>
 </head>
 <body>
-   <div class="wrapper">
-    <header>
-        <h2>Price Range</h2>
-        <p>Use slider or enter min and max price</p>
-    </header>
-    <div class="price-input">
-        <div class="field">
-            <span>Min</span>
-            <input type="number" class="input-min" value="2500">
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn">Aisha Shafiya
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Aisha</a>
+                <a href="#">Shafiya</a>
+                <a href="#">Byndoor</a>
+            </div>
         </div>
-        <div class="separotor">-</div>
-        <div class="field">
-            <span>Max</span>
-            <input type="number" class="input-max" value="7500">
-        </div>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-    <div class="slider">
-        <div class="progress"></div>
-    </div>
-    <div class="range-input">
-        <input type="range" class="range-min" min="0" max="10000" value="2500">
-        <input type="range" class="range-max" min="0" max="10000" value="7500">
-    </div>
-   </div> 
+
 </body>
 <script src="script.js"></script>
 </html>
